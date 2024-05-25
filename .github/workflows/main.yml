@@ -24,7 +24,7 @@ jobs:
         id: hello
         uses: ./
         with:
-          who-to-greet: 'Kevin Diaz'
+          who-to-greet: 'Pamela Perez'
       - name: get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
 
