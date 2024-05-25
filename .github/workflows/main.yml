@@ -1,3 +1,5 @@
+name: Manual Trigger Example
+
 on:
   workflow_dispatch:
     inputs:
@@ -7,9 +9,9 @@ on:
         default: 'warning'
         type: choice
         options:
-        - info
-        - warning
-        - debug
+          - info
+          - warning
+          - debug
 
 jobs:
   hello_world_job:
@@ -25,3 +27,4 @@ jobs:
           who-to-greet: 'Kevin Diaz'
       - name: get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
+
